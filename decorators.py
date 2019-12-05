@@ -1,15 +1,3 @@
-# _functions = {}
-# def register(f):
-#     global _functions
-#     _functions[f.__name__] = f
-#     return f
-
-# @register
-# def foo():
-#     return 'bar'
-
-# foo()
-
 class Store(object):
     def get_food(self, username, food):
         if username != 'admin':
@@ -79,7 +67,7 @@ def set_clase_name_and_id(klass):
 
 @set_clase_name_and_id
 class SomeClass(object):
-    pass 
+    pass
 
 # another example
 class CountCalls(object):
